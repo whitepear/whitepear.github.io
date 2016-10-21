@@ -39,13 +39,40 @@ body {
 	color: #fff;
 }
 
+.custom-nav-icon:hover {
+	color: #ddd;
+	cursor: pointer;
+}
+
+
 /* INDEX-SPECIFIC STYLES */
 
 /* ABOUT-SPECIFIC STYLES */
 
+.personal-links {
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.personal-links a {	
+	color: #444;
+	font-size: 56px;
+	padding-left: 3px;
+}
+
+.personal-links a:hover {
+	color: #333;
+	cursor: pointer;
+}
+
+#eduCol {
+	padding-left: 20px;
+}
+
 .about-col h1 {
 	font-weight: 300;
-	margin-top: 50px;	
+	margin-top: 20px;	
 	margin-bottom: 30px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
@@ -54,13 +81,14 @@ body {
 .about-col h2 {
 	font-size: 32px;
 	font-weight: 300;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #ccc;
 	padding-bottom: 12px;
 	display: inline-block;
 	width: 60%;
 }
 
 .about-col h3 {
+	margin-top: 15px;
 	font-size: 26px;
 	font-weight: 300;
 }
@@ -80,6 +108,24 @@ body {
 	margin-bottom: 25px;
 }
 
+.show-more {
+	cursor: pointer;
+}
+
+.show-more:hover {
+	color: #111;
+	border-bottom: 1px solid #aaa;
+}
+
+.show-more span {
+	font-size: 24px;
+}
+
+.show-more-sub {
+	margin-bottom: 10px;
+  margin-top: 15px;
+}
+
 .about-col ul {
 	padding: 0px;
 	margin-bottom: 40px;	
@@ -90,3 +136,5 @@ body {
 	font-size: 18px;
 	padding: 3px 0px;
 }
+
+/* FOOTER STYLES */
