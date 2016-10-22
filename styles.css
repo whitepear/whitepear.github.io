@@ -47,6 +47,142 @@ body {
 
 /* INDEX-SPECIFIC STYLES */
 
+.additional-row {
+	margin-top: 30px;
+}
+
+.portfolio-header {
+	font-weight: 300;
+	margin-top: 40px;	
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.project {
+	position: relative;
+	height: 300px;
+	width: 300px;
+	margin: 10px auto 0px;
+	overflow: hidden;	
+}
+
+.project img {	
+	transition: transform 0.275s ease-out;
+}
+
+.project:hover img {
+	transform: scale(1.05);
+}
+
+.project-overlay {
+	position: absolute;
+	left: 0; 
+	right: 0;
+  top: 0; 
+  bottom: 0;
+	background: rgba(1, 1, 1, 0.5);
+	color: #fff;
+	opacity: 0;
+	transition: opacity 0.275s ease-out;
+}
+
+.project:hover .project-overlay {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.project-overlay h2 {
+	font-weight: 300;
+	font-size: 32px;	
+	padding-left: 5px;
+	padding-right: 5px;
+	transform: translateY(50px);
+	transition: transform 0.32s ease-out;
+}
+
+.project:hover .project-overlay h2 {
+	transform: translateY(25px);
+}
+
+.project-tags {
+	transform: translateY(155px);
+	transition: transform 0.32s ease-out;
+	font-weight: 300;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.project-overlay:hover .project-tags {
+	transform: translateY(130px);
+}
+
+.project-tags div {
+	display: inline-block;
+	border-radius: 12px;
+	background: #85BB1A;
+	font-size: 16px;
+	padding: 3px 10px;
+	padding-top: 1px;
+	margin: 5px 1px;
+}
+
+.short-tag-list {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 60%;
+}
+
+.long-tag-list {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 49%;
+}
+
+.construction-message {
+	font-weight: 300;
+	transition: transform 0.32s ease-out;
+	transform: translateY(75px);
+}
+
+.project-overlay:hover .construction-message {
+	transform: translateY(50px);
+}
+
+.origin-top-left {	
+	transform-origin: top left;
+}
+
+.origin-top {
+	transform-origin: top;
+}
+
+.origin-top-right {
+	transform-origin: top right;
+}
+
+.origin-left {
+	transform-origin: left;
+}
+
+.origin-right {
+	transform-origin: right;
+}
+
+.origin-bottom-left {
+	transform-origin: bottom left;
+}
+
+.origin-bottom {
+	transform-origin: bottom;
+}
+
+.origin-bottom-right {
+	transform-origin: bottom right;
+}
+
 /* ABOUT-SPECIFIC STYLES */
 
 .personal-links {
