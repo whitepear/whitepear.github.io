@@ -8,6 +8,7 @@ body {
 }
 
 .extended-container {
+	position: relative;
 	background: #fff;
 	margin-top: 200px;
 	padding-bottom: 100px;
@@ -19,11 +20,20 @@ body {
 	font-size: 28px;
 	height: 70px;
 	line-height: 70px;
-	position: relative;
-	left: -15px;
+	position: absolute;
+	left: 0%;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	font-family: 'Raleway', sans-serif;
+}
+
+.custom-nav-fixed {
+	position: fixed;
+	top: 0%;
+	left: 50%;
+	z-index: 300;
+	transform: translateX(-50%);
+	margin: 0px;
 }
 
 #customNavLogo {
@@ -41,6 +51,10 @@ body {
 .custom-nav-icon:hover {
 	color: #ddd;
 	cursor: pointer;
+}
+
+.first-row {
+	margin-top: 70px;
 }
 
 
@@ -186,9 +200,8 @@ body {
 
 .personal-links {
 	text-align: left;
-	padding-top: 5px;
+	padding-top: 25px;
 	padding-left: 5px;
-	margin-top: 20px;
 }
 
 .personal-links a {	
