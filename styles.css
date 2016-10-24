@@ -34,6 +34,7 @@ body {
 	z-index: 300;
 	transform: translateX(-50%);
 	margin: 0px;
+	border-radius: 0px;
 }
 
 #customNavLogo {
