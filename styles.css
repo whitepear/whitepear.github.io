@@ -292,6 +292,68 @@ body {
 }
 
 
+/* PROJECT SUMMARY STYLES */
+
+.project-col {
+	padding-top: 50px;
+}
+
+.project-col h1 {
+	font-weight: 300;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	width: 70%;
+}
+
+.project-description {
+	margin-bottom: 45px;
+	padding-right: 50px;
+}
+
+.project-col p {
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+.project-col img {
+	margin-bottom: 25px;
+}
+
+.code-btn {
+	background: #117878;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.code-btn:hover {
+	background: #066262;
+	color: #fff;
+}
+
+.code-btn:active, .code-btn:focus {
+	background: #004D4D;
+	color: #eee;
+}
+
+.live-btn {
+	background: #85BB1A;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.live-btn:hover {
+	background: #699909;
+	color: #fff;
+}
+
+.live-btn:active, .live-btn:focus {
+	background: #507800;
+	color: #eee;
+}
+
+
 /* MEDIA QUERIES */
 
 /* Medium Styles */
