@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Metadata Microservice</title>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Normalize CSS (Minified) -->
+	<link rel="stylesheet" href="normalize.css">
+	<!-- Bootstrap CSS (Minified) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200|Open+Sans:300,400" rel="stylesheet">
+	<!-- FontAwesome CSS (Minified) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+	<div class="container extended-container">
+		<!-- Standard Navbar -->
+		<div class="container custom-nav">
+			<span class="pull-left" id="customNavLogo">Paul Gallagher</span>
+			<a href="../../about.html"><span class="custom-nav-icon pull-right">About</span></a>
+			<a href="../../index.html"><span class="custom-nav-icon pull-right">Portfolio</span></a>			
+		</div>
+
+		<!-- Mobile Navbar -->
+		<div class="container mobile-nav">			
+			<a href="../../index.html"><span>Portfolio</span></a>
+			<a href="../../about.html"><span>About</span></a>
+		</div>
+
+		<div class="row first-row">
+			<div class="col-xs-12 col-sm-5 project-col text-center">
+				<img src="https://placeholdit.imgix.net/~text?txtsize=28&txt=300%C3%97300&w=300&h=300" alt="App Picture" height="300" width="300">
+				<img src="https://placeholdit.imgix.net/~text?txtsize=28&txt=300%C3%97300&w=300&h=300" alt="App Picture" height="300" width="300">
+			</div> <!-- /col -->
+
+			<div class="col-xs-12 col-sm-7 project-col">
+				<h1>File Metadata Microservice</h1>
+				<div class="project-description">
+					<p>An Express API that allows users to upload files in order to measure their size in bytes.</p>					
+					<p>The application consists of two routes, one GET and one POST. The application utilises <a href="https://www.npmjs.com/package/multer">the Multer middleware</a> in order to implement file-upload functionality. API responds with JSON data.</p>	
+				</div>								
+				<a class="btn code-btn" href="https://github.com/whitepear/file_metadata" target="_blank">View Code</a>
+				<a class="btn live-btn" href="https://fcc-file.herokuapp.com/" target="_blank">View App</a>
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+
+	<script type="text/javascript" src="../../script.js"></script>
+</body>
+</html>
