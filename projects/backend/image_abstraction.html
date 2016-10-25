@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Search Abstraction Layer</title>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Normalize CSS (Minified) -->
+	<link rel="stylesheet" href="normalize.css">
+	<!-- Bootstrap CSS (Minified) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200|Open+Sans:300,400" rel="stylesheet">
+	<!-- FontAwesome CSS (Minified) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+	<div class="container extended-container">
+		<!-- Standard Navbar -->
+		<div class="container custom-nav">
+			<span class="pull-left" id="customNavLogo">Paul Gallagher</span>
+			<a href="../../about.html"><span class="custom-nav-icon pull-right">About</span></a>
+			<a href="../../index.html"><span class="custom-nav-icon pull-right">Portfolio</span></a>			
+		</div>
+
+		<!-- Mobile Navbar -->
+		<div class="container mobile-nav">			
+			<a href="../../index.html"><span>Portfolio</span></a>
+			<a href="../../about.html"><span>About</span></a>
+		</div>
+
+		<div class="row first-row">
+			<div class="col-xs-12 col-sm-5 project-col text-center">
+				<img src="https://placeholdit.imgix.net/~text?txtsize=28&txt=300%C3%97300&w=300&h=300" alt="App Picture" height="300" width="300">
+				<img src="https://placeholdit.imgix.net/~text?txtsize=28&txt=300%C3%97300&w=300&h=300" alt="App Picture" height="300" width="300">
+			</div> <!-- /col -->
+
+			<div class="col-xs-12 col-sm-7 project-col">
+				<h1>Image Search Abstraction Layer</h1>
+				<div class="project-description">
+					<p>An Express API that allows users to receive JSON data from Google's Custom Search API. The data will contain image URLs, alt text and page URLs for a set of images related to the provided search string. Responses are paginated and can be navigated by attaching a query string parameter to the request URL. The 25 most recent searches and their associated search-times are available for access.</p>					
+					<p>The application consists of multiple GET routes, one of which requests JSON data from the Google Custom Search API. API data is processed before being displayed to the user. As part of this processing, the application implements <a href="http://blog.osteele.com/posts/2007/12/cheap-monads/">an idiomatic test</a> for nested property chains that may or may not stop at certain points. The application interfaces with a single MongoDB collection in order to store the most recent search terms and their associated timestamps.</p>	
+				</div>								
+				<a class="btn code-btn" href="https://github.com/whitepear/image-search-abstraction" target="_blank">View Code</a>
+				<a class="btn live-btn" href="https://img-abstract.herokuapp.com/" target="_blank">View App</a>
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+
+	<script type="text/javascript" src="../../script.js"></script>
+</body>
+</html>
