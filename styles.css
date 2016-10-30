@@ -69,9 +69,13 @@ body {
 	margin-top: 30px;
 }
 
+#firstHeader {
+	margin-top: 60px;
+}
+
 .portfolio-header {
 	font-weight: 300;
-	margin-top: 40px;	
+	margin-top: 90px;	
 	margin-bottom: 30px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
@@ -100,6 +104,7 @@ body {
   top: 0; 
   bottom: 0;
 	background: rgba(1, 1, 1, 0.5);
+	/*background: linear-gradient(0deg, rgba(1, 1, 1, 0.35) 5%, rgba(1, 1, 1, 0.5));*/
 	color: #fff;
 	opacity: 0;
 	transition: opacity 0.275s ease-out;
