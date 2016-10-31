@@ -86,7 +86,8 @@ body {
 	height: 300px;
 	width: 300px;
 	margin: 10px auto 0px;
-	overflow: hidden;	
+	overflow: hidden;
+	border-radius: 5px;
 }
 
 .project img {	
@@ -103,7 +104,7 @@ body {
 	right: 0;
   top: 0; 
   bottom: 0;
-	background: rgba(1, 1, 1, 0.5);
+	background: rgba(1, 1, 1, 0.65);
 	/*background: linear-gradient(0deg, rgba(1, 1, 1, 0.35) 5%, rgba(1, 1, 1, 0.5));*/
 	color: #fff;
 	opacity: 0;
@@ -143,7 +144,7 @@ body {
 .project-tags div {
 	display: inline-block;
 	border-radius: 12px;
-	background: #85BB1A;
+	background: #82B61A;
 	font-size: 16px;
 	padding: 3px 10px;
 	padding-top: 1px;
