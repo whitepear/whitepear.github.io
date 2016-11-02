@@ -69,7 +69,7 @@ body {
 	margin-top: 30px;
 }
 
-#firstHeader {
+#fullStackHeader {
 	margin-top: 60px;
 }
 
@@ -451,7 +451,7 @@ body {
 
 	/* INDEX-SPECIFIC STYLES */
 
-	#firstHeader {
+	#fullStackHeader {
 		margin-top: 30px;
 	}
 
@@ -467,9 +467,28 @@ body {
 		color: #444;
 	}
 
-	.collapsed-project-section {
+	.collapsed-fullstack-section,
+	.collapsed-react-section,
+	.collapsed-backend-section,
+	.collapsed-frontend-section {
 		max-height: 0px;
 		overflow: hidden;
+	}
+
+	.expanded-fullstack-section {
+		padding-bottom: 25px;
+	}
+
+	.expanded-react-section {
+		padding-bottom: 25px;
+	}
+
+	.expanded-backend-section {
+		padding-bottom: 25px;
+	}
+
+	.expanded-frontend-section {
+		padding-bottom: 25px;
 	}
 
 	.additional-row {
@@ -489,6 +508,7 @@ body {
 
 	.project-overlay {
 		opacity: 1;
+		background: rgba(0, 0, 0, 0.6);
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -512,7 +532,7 @@ body {
 	#mobileTitleContainer h1 {
 		font-size: 36px;
 		font-weight: 300;	
-		margin-top: 18px;
+		margin-top: 16px;
 	}
 
 	.personal-links {
