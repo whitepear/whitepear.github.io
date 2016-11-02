@@ -298,7 +298,7 @@ body {
 }
 
 
-/* PROJECT SUMMARY STYLES */
+/* PROJECT SUMMARY SPECIFIC STYLES */
 
 .project-col {
 	padding-top: 50px;
@@ -388,6 +388,12 @@ body {
 
 /* Extra Small Styles */
 @media (max-width: 767px) {
+	/* GENERAL STYLES */
+
+	body {
+		background: #fff;
+	}
+
 	.extended-container {
 		margin-top: 0px;
 	}
@@ -421,5 +427,81 @@ body {
 
 	.mobile-nav a:active {
 		color: #ddd;
+	}
+
+	.first-row {
+		padding: 0px;
+	}
+
+
+	/* ABOUT-SPECIFIC STYLES */
+	
+	.personal-links {
+		margin-top: 0px;
+	}
+
+	#eduCol {
+		overflow: hidden;
+		transition: max-height 0.85s ease-in-out;
+	}
+
+	#skillsCol {		
+		overflow: hidden;
+		transition: max-height 0.85s ease-in-out;
+	}
+
+	.collapsed-edu-section {		
+		max-height: 85px;
+	}
+
+	.collapsed-skills-section {
+		max-height: 125px;
+	}
+
+	.expanded-section {
+		max-height: 3000px;
+	}
+
+	.collapse-divider {
+		border-bottom: 1px solid #ccc;
+		width: 95%;
+		margin: 0 auto;
+		margin-left: 10px;
+	}
+
+	.about-col h1 {
+		border-bottom: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 15px;
+	}
+
+	.info-caret {
+		display: inline;
+		font-size: 24px;
+		line-height: 40px;
+	}
+
+	.about-col h2 {
+		width: 100%;
+		font-size: 30px;
+		margin-top: 5px;
+	}
+
+	.about-col h3 {
+		font-size: 24px;
+		margin-top: 5px;
+	}	
+
+	#awardsHeader {
+		margin-top: 27px;
+		margin-bottom: 14px;
+	}
+
+	.about-col ul {
+		margin-bottom: 25px;
+	}
+
+	.about-col .last-list {
+		margin-bottom: 50px;
 	}
 }
