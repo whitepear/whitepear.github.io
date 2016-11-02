@@ -81,6 +81,10 @@ body {
 	border-bottom: 1px solid #ccc;
 }
 
+.project-caret {
+	display: none;
+}
+
 .project {
 	position: relative;
 	height: 300px;
@@ -92,6 +96,8 @@ body {
 
 .project img {	
 	transition: transform 0.275s ease-out;
+	height: 300px;
+	width: 300px;
 }
 
 .project:hover img {
@@ -104,7 +110,7 @@ body {
 	right: 0;
   top: 0; 
   bottom: 0;
-	background: rgba(1, 1, 1, 0.65);
+	background: rgba(1, 1, 1, 0.7);
 	/*background: linear-gradient(0deg, rgba(1, 1, 1, 0.35) 5%, rgba(1, 1, 1, 0.5));*/
 	color: #fff;
 	opacity: 0;
@@ -439,13 +445,77 @@ body {
 
 	.first-row {
 		padding: 0px;
+		margin-top: 0px;
+	}
+
+
+	/* INDEX-SPECIFIC STYLES */
+
+	#firstHeader {
+		margin-top: 30px;
+	}
+
+	.portfolio-header {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 28px;
+	}
+
+	.project-caret {
+		display: inline;
+		font-size: 22px;
+	}
+
+	.collapsed-project-section {
+		max-height: 0px;
+		overflow: hidden;
+	}
+
+	.additional-row {
+		margin-top: 0px;
+	}
+
+	.project {
+		height: 260px;
+		width: 260px;
+		margin-bottom: 5px;
+	}
+
+	.project img {
+		height: 260px;
+		width: 260px;
+	}
+
+	.project-overlay {
+		opacity: 1;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.project-overlay h2 {
+		font-size: 26px;
+	}
+
+	.project-tags {
+		transform: translateY(115px);	
 	}
 
 
 	/* ABOUT-SPECIFIC STYLES */
 	
+	#mobileTitleContainer {
+		position: absolute;
+		top: 0;		
+	}
+
+	#mobileTitleContainer h1 {
+		font-size: 47px;
+	}
+
 	.personal-links {
 		margin-top: 0px;
+		text-align: right;
+		margin-bottom: 20px;
 	}
 
 	#eduCol {
@@ -458,7 +528,7 @@ body {
 		overflow: hidden;
 		transition: max-height 0.20s;
 	}
-
+	
 	.collapsed-edu-section {		
 		max-height: 70px;
 	}
@@ -472,7 +542,7 @@ body {
 	}
 
 	.collapse-divider {
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid #ddd;
 		width: 97%;
 		margin: 0 auto;
 	}
@@ -486,7 +556,7 @@ body {
 
 	.info-caret {
 		display: inline;
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 40px;
 	}
 
