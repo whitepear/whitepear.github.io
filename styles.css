@@ -441,6 +441,7 @@ body {
 	}
 
 	#eduCol {
+		padding-left: 15px;
 		overflow: hidden;
 		transition: max-height 0.85s ease-in-out;
 	}
