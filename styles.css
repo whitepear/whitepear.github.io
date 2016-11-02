@@ -238,6 +238,10 @@ body {
 	border-bottom: 1px solid #ccc;
 }
 
+.info-caret {
+	display: none;
+}
+
 .about-col h2 {
 	font-size: 32px;
 	font-weight: 300;
@@ -443,12 +447,12 @@ body {
 	#eduCol {
 		padding-left: 15px;
 		overflow: hidden;
-		transition: max-height 0.85s ease-in-out;
+		transition: max-height 0.50s;
 	}
 
 	#skillsCol {		
 		overflow: hidden;
-		transition: max-height 0.85s ease-in-out;
+		transition: max-height 0.50s;
 	}
 
 	.collapsed-edu-section {		
@@ -465,9 +469,8 @@ body {
 
 	.collapse-divider {
 		border-bottom: 1px solid #ccc;
-		width: 95%;
+		width: 97%;
 		margin: 0 auto;
-		margin-left: 10px;
 	}
 
 	.about-col h1 {
