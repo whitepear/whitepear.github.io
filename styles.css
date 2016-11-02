@@ -463,7 +463,8 @@ body {
 
 	.project-caret {
 		display: inline;
-		font-size: 22px;
+		font-size: 18px;
+		color: #444;
 	}
 
 	.collapsed-project-section {
@@ -504,18 +505,25 @@ body {
 	/* ABOUT-SPECIFIC STYLES */
 	
 	#mobileTitleContainer {
-		position: absolute;
-		top: 0;		
+		background: #C81C1C;
+		color: #fff;		
 	}
 
 	#mobileTitleContainer h1 {
-		font-size: 47px;
+		font-size: 36px;
+		font-weight: 300;	
+		margin-top: 18px;
 	}
 
 	.personal-links {
-		margin-top: 0px;
-		text-align: right;
-		margin-bottom: 20px;
+		display: none;
+	}
+
+	.mobile-personal-links a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 47px;
+		margin-left: 5px;
 	}
 
 	#eduCol {
@@ -528,7 +536,7 @@ body {
 		overflow: hidden;
 		transition: max-height 0.20s;
 	}
-	
+
 	.collapsed-edu-section {		
 		max-height: 70px;
 	}
@@ -556,8 +564,9 @@ body {
 
 	.info-caret {
 		display: inline;
-		font-size: 20px;
+		font-size: 19px;
 		line-height: 40px;
+		color: #444;
 	}
 
 	.about-col h2 {
