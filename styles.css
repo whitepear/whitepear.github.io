@@ -451,20 +451,20 @@ body {
 	#eduCol {
 		padding-left: 15px;
 		overflow: hidden;
-		transition: max-height 0.50s;
+		transition: max-height 0.20s;
 	}
 
 	#skillsCol {		
 		overflow: hidden;
-		transition: max-height 0.50s;
+		transition: max-height 0.20s;
 	}
 
 	.collapsed-edu-section {		
-		max-height: 85px;
+		max-height: 70px;
 	}
 
 	.collapsed-skills-section {
-		max-height: 125px;
+		max-height: 105px;
 	}
 
 	.expanded-section {
@@ -481,6 +481,7 @@ body {
 		border-bottom: 0px;
 		margin-bottom: 0px;
 		padding-bottom: 15px;
+		font-size: 32px;
 	}
 
 	.info-caret {
@@ -491,14 +492,26 @@ body {
 
 	.about-col h2 {
 		width: 100%;
-		font-size: 30px;
+		font-size: 28px;
 		margin-top: 5px;
 	}
 
-	.about-col h3 {
+	#eduCol h2 {
+		font-size: 26px;
+	}
+
+	#skillsCol h2 {
 		font-size: 24px;
+	}
+
+	.about-col h3 {
+		font-size: 22px;
 		margin-top: 5px;
 	}	
+
+	.about-col p {
+		font-size: 17px;
+	}
 
 	#awardsHeader {
 		margin-top: 27px;
