@@ -320,6 +320,10 @@ body {
 	padding-right: 50px;
 }
 
+.project-description span {
+	font-weight: bold;
+}
+
 .project-col p {
 	font-size: 18px;
 	margin-top: 30px;
@@ -464,7 +468,7 @@ body {
 	}
 
 	.expanded-section {
-		max-height: 3000px;
+		max-height: 2000px;
 	}
 
 	.collapse-divider {
