@@ -650,5 +650,10 @@ body {
 
 	.project-col h1 {
 		font-size: 32px;
+		width: auto;
+	}
+
+	.project-description {
+		padding-right: 0px;
 	}
 }
