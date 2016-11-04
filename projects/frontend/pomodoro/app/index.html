@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Pomodoro</title>
-	<meta name="description" content="Pomodoro Timer">	
+	<meta name="description" content="Pomodoro Timer">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -23,7 +23,7 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12 hidden-xs">
 				<h1 class="mont text-center pomoHeader">Pomodoro Timer</h1>
 			</div>
 		</div>
@@ -64,10 +64,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 text-right">
+			<div id="startContainer" class="col-xs-6">
 				<button id="start" class="mont ignitionBtn shrink">Start</button>
 			</div>
-			<div class="col-xs-6 text-left">
+			<div id="pauseContainer" class="col-xs-6">
 				<button id="pause" class="mont ignitionBtn shrink">Pause</button>
 			</div>
 		</div>
