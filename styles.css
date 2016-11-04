@@ -338,6 +338,7 @@ body {
 .project-col img {
 	margin-bottom: 25px;
 	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 
 .na-thumbnail {
@@ -536,6 +537,14 @@ body {
 
 	.project-overlay:hover .project-tags {
 		transform: translateY(115px);
+	}
+
+	#wikiTagList {
+		transform: translateY(145px);
+	}
+
+	.project-overlay:hover #wikiTagList {
+		transform: translateY(145px);
 	}
 
 
