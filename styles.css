@@ -259,7 +259,7 @@ body {
 
 .about-col h3 {
 	margin-top: 15px;
-	font-size: 26px;
+	font-size: 28px;
 	font-weight: 300;
 }
 
@@ -269,11 +269,12 @@ body {
 }
 
 .about-col h4 {
-	font-size: 18px;
+	font-size: 17px;
+	font-weight: bold;
 }
 
 .about-col p {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 18px;
 	margin-bottom: 25px;
 }
@@ -303,6 +304,7 @@ body {
 }
 
 .about-col li {
+	font-weight: 400;
 	font-size: 18px;
 	padding: 3px 0px;
 }
@@ -635,8 +637,14 @@ body {
 		margin-top: 5px;
 	}	
 
+	.about-col h4 {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
 	.about-col p {
 		font-size: 17px;
+		font-weight: 300;
 	}
 
 	#awardsHeader {
@@ -646,6 +654,10 @@ body {
 
 	.about-col ul {
 		margin-bottom: 25px;
+	}
+
+	.about-col li {
+		font-weight: 300;
 	}
 
 	.about-col .last-list {
