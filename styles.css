@@ -324,7 +324,6 @@ body {
 }
 
 .project-description {
-	margin-bottom: 45px;
 	padding-right: 50px;
 }
 
@@ -355,6 +354,10 @@ body {
 	font-size: 92px;
 	line-height: 350px;	
 	text-align: center;
+}
+
+.project-btn-container {
+	margin-top: 45px;
 }
 
 .code-btn {
@@ -682,6 +685,15 @@ body {
 	}
 
 	.project-description {
+		position: relative;
 		padding-right: 0px;
+		padding-top: 60px;
+		margin-bottom: 45px;
+	}
+
+	.project-btn-container {
+		position: absolute;
+		top: 15px;
+		margin-top: 0px;
 	}
 }
