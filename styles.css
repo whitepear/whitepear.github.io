@@ -335,6 +335,7 @@ body {
 .project-col p {
 	font-size: 18px;
 	margin-top: 30px;
+	font-weight: 400;
 }
 
 .project-col img {
@@ -674,6 +675,10 @@ body {
 	.project-col h1 {
 		font-size: 32px;
 		width: auto;
+	}
+
+	.project-col p {
+		font-weight: 300;
 	}
 
 	.project-description {
