@@ -46,10 +46,18 @@
 			<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 		</div>		
 
+		<!-- Mobile Tab Container -->
+		<div class="row">
+			<div class="col-xs-12 tab-container">
+				<div id="eduTab" class="tab">Education</div>
+				<div id="skillsTab" class="tab">Skill Set</div>
+			</div>
+		</div>
+
 		<!-- Education and Skills -->
 		<div class="row">
-			<div id="eduCol" class="col-xs-12 col-sm-6 about-col collapsed-edu-section">
-				<h1 id="eduHeader">Education <span class="info-caret">&#9660;</span></h1>			
+			<div id="eduCol" class="col-xs-12 col-sm-6 about-col active-col">
+				<h1 class="hidden-xs">Education</h1>			
 				<h2>Trinity College Dublin</h2>
 				<h3>BA Physiology, First Class Honours</h3>			
 				<h4>2011 - 2015</h4>
@@ -60,9 +68,8 @@
 				<h4>Best Viva Performance</h4>
 				<p>Awarded based on performance within final-year viva voce - a presentation and defence of the student's final-year research project, followed by an examination of the student's general knowledge of physiology.</p>				
 			</div>
-			<div class="col-xs-12 visible-xs collapse-divider"></div>
-			<div id="skillsCol" class="col-xs-12 col-sm-offset-1 col-sm-5 about-col expanded-section">
-				<h1 id="skillsHeader">Development Skill Set <span class="info-caret">&#9650;</span></h1>		
+			<div id="skillsCol" class="col-xs-12 col-sm-offset-1 col-sm-5 about-col">
+				<h1 class="hidden-xs">Development Skill Set</h1>		
 				<h2>Front-End</h2>
 				<ul>
 					<li>HTML</li>
@@ -82,14 +89,13 @@
 					<li>Mongoose</li>
 				</ul>
 				<h2>Development Environment</h2>
-				<ul class="last-list">
+				<ul>
 					<li>Webpack</li>
 					<li>Bash</li>
 					<li>Git &amp; GitHub</li>
 					<li>Agile Software Methodology (Scrum)</li>
 				</ul>
 			</div> <!-- /col-xs-12 -->
-			<div class="col-xs-12 visible-xs collapse-divider"></div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 	<script type="text/javascript" src="script.js"></script>

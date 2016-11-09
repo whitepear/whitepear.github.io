@@ -425,7 +425,7 @@ body {
 
 	.mobile-nav {	
 		background: #C81C1C;
-		font-size: 24px;
+		font-size: 0px; /* removes whitespace between inline-block nav options */
 		font-family: 'Raleway', sans-serif;
 		height: 55px;
 		line-height: 55px;
@@ -440,10 +440,15 @@ body {
 
 	.mobile-nav a {
 		color: #fff;
-		width: 48%;
+		font-size: 24px;
+		width: 50%;
 		display: inline-block;
 		text-align: center;
 		text-decoration: none;
+	}
+
+	.mobile-nav a:first-child {		
+		border-right: 1px solid #A81818;
 	}
 
 	.mobile-nav a:active {
@@ -578,48 +583,38 @@ body {
 		margin-left: 5px;
 	}
 
+	.tab-container {
+		font-size: 0px; /* removes whitespace between inline-block tabs */
+		height: 60px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.tab {
+		display: inline-block;
+		font-size: 24px;
+		text-align: center;
+		width: 50%;
+		line-height: 60px;
+	}
+
+	.tab:first-child {
+		height: 100%;
+		border-right: 1px solid #ccc;
+	}
+
+	.about-col {
+		margin-top: 2px;
+		padding-top: 20px;
+		border-top: 1px solid #ccc;
+		display: none;
+	}
+
 	#eduCol {
 		padding-left: 15px;
-		overflow: hidden;
-		transition: max-height 0.20s;
 	}
 
-	#skillsCol {		
-		overflow: hidden;
-		transition: max-height 0.20s;
-	}
-
-	.collapsed-edu-section {		
-		max-height: 70px;
-	}
-
-	.collapsed-skills-section {
-		max-height: 105px;
-	}
-
-	.expanded-section {
-		max-height: 2000px;
-	}
-
-	.collapse-divider {
-		border-bottom: 1px solid #ddd;
-		width: 97%;
-		margin: 0 auto;
-	}
-
-	.about-col h1 {
-		border-bottom: 0px;
-		margin-bottom: 0px;
-		padding-bottom: 15px;
-		font-size: 32px;
-		cursor: pointer;
-	}
-
-	.info-caret {
-		display: inline;
-		font-size: 19px;
-		line-height: 40px;
-		color: #444;
+	.active-col {
+		display: block;
 	}
 
 	.about-col h2 {
@@ -663,11 +658,6 @@ body {
 	.about-col li {
 		font-weight: 300;
 	}
-
-	.about-col .last-list {
-		margin-bottom: 50px;
-	}
-
 
 	/* PROJECT-SPECIFIC STYLES */
 

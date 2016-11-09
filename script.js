@@ -118,38 +118,25 @@ if (document.getElementById('fullStackHeader')) {
 }
 
 
-// 'About' Collapsible Sections (Mobile)
-/////////////////////////////////
+// About Tab Selection (Mobile)
+///////////////////////////////////
 
-// this code allows for education and skillset sections
-// to collapse and expand on click
+// this code handles switching between the education
+// and skill set sections on the about page for mobile devices
 
-var eduCol = document.getElementById('eduCol');
-var eduHeader = document.getElementById('eduHeader');
+var eduCol = document.getElementById('eduCol'); // education div
+var skillsCol = document.getElementById('skillsCol'); // skills div
 
-eduHeader.addEventListener('click', function() {
-	if (eduCol.classList.contains('collapsed-edu-section')) {
-		eduHeader.innerHTML = 'Education <span class="info-caret">&#9650;</span>';
-		eduCol.classList.remove('collapsed-edu-section');
-		eduCol.classList.add('expanded-section');
-	} else {		
-		eduHeader.innerHTML = 'Education <span class="info-caret">&#9660;</span>';
-		eduCol.classList.remove('expanded-section');
-		eduCol.classList.add('collapsed-edu-section');
+document.getElementById('eduTab').addEventListener('click', function() {
+	if (!eduCol.classList.contains('active-col')) {
+		skillsCol.classList.remove('active-col');
+		eduCol.classList.add('active-col');
 	}
 });
 
-var skillsCol = document.getElementById('skillsCol');
-var skillsHeader = document.getElementById('skillsHeader');
-
-skillsHeader.addEventListener('click', function() {
-	if (skillsCol.classList.contains('collapsed-skills-section')) {
-		skillsHeader.innerHTML = 'Development Skill Set <span class="info-caret">&#9650;</span>';
-		skillsCol.classList.remove('collapsed-skills-section');
-		skillsCol.classList.add('expanded-section');
-	} else {
-		skillsHeader.innerHTML = 'Development Skill Set <span class="info-caret">&#9660;</span>';
-		skillsCol.classList.remove('expanded-section');
-		skillsCol.classList.add('collapsed-skills-section');
-	}	
+document.getElementById('skillsTab').addEventListener('click', function() {
+	if (!skillsCol.classList.contains('active-col')) {
+		eduCol.classList.remove('active-col');
+		skillsCol.classList.add('active-col');
+	}
 });
