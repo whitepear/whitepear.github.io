@@ -557,55 +557,38 @@ body {
 
 	/* ABOUT-SPECIFIC STYLES */
 	
-	#mobileTitleContainer {
-		background: #C81C1C;
-		color: #fff;		
-	}
-
-	#mobileTitleContainer h1 {
-		font-size: 36px;
-		font-weight: 300;	
-		margin-top: 16px;
-	}
-
 	.personal-links {
 		display: none;
 	}
 
-	.mobile-personal-links a {
-		color: #fff;
-		text-decoration: none;
-		font-size: 42px;
-		margin-left: 5px;
-	}
-
 	.tab-container {
+		background: #C81C1C;
 		font-size: 0px; /* removes whitespace between inline-block tabs */
-		height: 60px;
-		border-bottom: 1px solid #ccc;
+		height: 55px;
+		border-bottom: 1px solid #fff;
 	}
 
 	.tab {
-		display: inline-block;
+		display: inline-block;		
+		height: 100%;
 		font-size: 24px;
 		text-align: center;
 		width: 50%;
-		line-height: 60px;
-		color: #999;
+		line-height: 55px;
+		color: rgba(255, 255, 255, 0.75);
 	}
 
 	.tab:first-child {
-		height: 100%;
 		border-right: 1px solid #ccc;
 	}
 
 	.active-tab {
-		color: #111;
+		color: #fff;
 	}
 
 	.about-col {
 		margin-top: 2px;
-		padding-top: 20px;
+		padding-top: 2px;
 		border-top: 1px solid #ccc;
 		display: none;
 	}
@@ -616,6 +599,18 @@ body {
 
 	.active-col {
 		display: block;
+	}
+
+	.mobile-links {
+		text-align: right;
+		font-size: 42px;
+		padding-left: 5px;
+	}
+
+	.mobile-links a {
+		margin-left: -3px;
+		text-decoration: none;
+		color: #555;
 	}
 
 	.about-col h2 {
