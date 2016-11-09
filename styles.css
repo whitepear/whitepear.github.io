@@ -463,10 +463,6 @@ body {
 
 	/* INDEX-SPECIFIC STYLES */
 
-	.row {
-		transition: max-height 0.2s;
-	}
-
 	#fullStackHeader {
 		margin-top: 30px;
 	}
