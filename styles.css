@@ -518,7 +518,7 @@ body {
 		margin-bottom: 5px;
 	}
 
-	.last-project {
+	.project:last-child {
 		margin-bottom: 30px;
 	}
 
