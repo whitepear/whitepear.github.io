@@ -579,7 +579,7 @@ body {
 	.mobile-personal-links a {
 		color: #fff;
 		text-decoration: none;
-		font-size: 47px;
+		font-size: 42px;
 		margin-left: 5px;
 	}
 
@@ -595,11 +595,16 @@ body {
 		text-align: center;
 		width: 50%;
 		line-height: 60px;
+		color: #999;
 	}
 
 	.tab:first-child {
 		height: 100%;
 		border-right: 1px solid #ccc;
+	}
+
+	.active-tab {
+		color: #111;
 	}
 
 	.about-col {

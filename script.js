@@ -124,19 +124,25 @@ if (document.getElementById('fullStackHeader')) {
 // this code handles switching between the education
 // and skill set sections on the about page for mobile devices
 
+var eduTab = document.getElementById('eduTab'); // education tab
+var skillsTab = document.getElementById('skillsTab') // skills tab
 var eduCol = document.getElementById('eduCol'); // education div
 var skillsCol = document.getElementById('skillsCol'); // skills div
 
-document.getElementById('eduTab').addEventListener('click', function() {
+eduTab.addEventListener('click', function() {
 	if (!eduCol.classList.contains('active-col')) {
-		skillsCol.classList.remove('active-col');
+		skillsTab.classList.remove('active-tab');	
+		skillsCol.classList.remove('active-col');			
+		eduTab.classList.add('active-tab');
 		eduCol.classList.add('active-col');
 	}
 });
 
-document.getElementById('skillsTab').addEventListener('click', function() {
+skillsTab.addEventListener('click', function() {
 	if (!skillsCol.classList.contains('active-col')) {
+		eduTab.classList.remove('active-tab');
 		eduCol.classList.remove('active-col');
+		skillsTab.classList.add('active-tab');
 		skillsCol.classList.add('active-col');
 	}
 });
