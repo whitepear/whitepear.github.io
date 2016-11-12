@@ -405,7 +405,17 @@ body {
 
 /* Small Styles */
 @media (min-width: 768px) and (max-width: 991px) {
+	/* INDEX-SPECIFIC STYLES */
 
+	/* PROJECT SUMMARY SPECIFIC STYLES */
+	.project-col img, .na-thumbnail {
+		width: 250px;
+		height: 250px;
+	}
+
+	.na-thumbnail div {
+		line-height: 250px;
+	}
 }
 
 /* Extra Small Styles */
