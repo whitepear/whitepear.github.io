@@ -328,7 +328,7 @@ body {
 	padding-right: 50px;
 }
 
-.project-description span {
+.project-description span:first-child {
 	font-weight: bold;
 }
 
