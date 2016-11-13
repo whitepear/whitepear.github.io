@@ -65,17 +65,13 @@ body {
 
 /* INDEX-SPECIFIC STYLES */
 
-.additional-row {
-	margin-top: 30px;
-}
-
 #fullStackHeader {
 	margin-top: 60px;
 }
 
 .portfolio-header {
 	font-weight: 300;
-	margin-top: 90px;	
+	margin-top: 60px;	
 	margin-bottom: 30px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
@@ -89,7 +85,7 @@ body {
 	position: relative;
 	height: 300px;
 	width: 300px;
-	margin: 10px auto 0px;
+	margin: 10px auto 30px;
 	overflow: hidden;
 	border-radius: 5px;
 }
@@ -513,10 +509,6 @@ body {
 
 	.expanded-frontend-section {
 		max-height: 400px;
-	}
-
-	.additional-row {
-		margin-top: 0px;
 	}
 
 	.project {
