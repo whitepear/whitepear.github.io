@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quote Generator</title>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS (Minified) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200|Open+Sans:300,400" rel="stylesheet">
+	<!-- FontAwesome CSS (Minified) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="../../../styles.css">
+</head>
+<body>
+	<div class="container extended-container">
+		<!-- Standard Navbar -->
+		<div class="container custom-nav">
+			<span class="pull-left" id="customNavLogo">Paul Gallagher</span>
+			<a href="../../../about.html"><span class="custom-nav-icon pull-right">About</span></a>
+			<a href="../../../index.html"><span class="custom-nav-icon pull-right">Portfolio</span></a>			
+		</div>
+
+		<!-- Mobile Navbar -->
+		<div class="container mobile-nav">			
+			<a href="../../../index.html"><span>Portfolio</span></a>
+			<a href="../../../about.html"><span>About</span></a>
+		</div>
+
+		<div class="row first-row">
+			<div class="hidden-xs col-sm-5 project-col text-center">
+				<img src="../../../portfolio_images/projects/quote/quote1.png" alt="App Picture" height="350" width="350">
+			</div> <!-- /col -->
+
+			<div class="col-xs-12 col-sm-7 project-col">
+				<h1>Quote Generator</h1>
+				<div class="project-description">
+					<p>This responsively-designed React.js application provides users with randomly generated quotes, sourced from the <a href="http://forismatic.com/en/api/" target="_blank">Forismatic API</a>. A list of the three most recently generated quotes is updated in real-time. Additionally, users can press a button to tweet the current quote.</p>
+					<p>The application architecture consists of a single stateful container component, within which multiple stateless functional components reside. If a user attempts to tweet a quote containing more than 140 characters, the quote will be replaced with a truncated preview and a link to the quote in its entirety at the Forismatic website. Application styling is implemented via SASS.</p>
+					<p><span>Note:</span> Due to limitations inherent to the Forismatic API, the live application<span class="hidden-xs"> (linked below)</span> must route API requests through <a href="http://crossorigin.me/" target="_blank">a proxy</a>. There may be a delay when fetching new quotes as a result.</p>	
+					<div class="project-btn-container">
+						<a class="btn code-btn" href="https://github.com/whitepear/quote-generator" target="_blank">View Code</a>
+						<a class="btn live-btn" href="app/index.html" target="_blank">View App</a>
+					</div> <!-- /project-btn-container -->
+				</div> <!-- /project-description -->						
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+
+	<script type="text/javascript" src="../../../script.js"></script>
+</body>
+</html>
