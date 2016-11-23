@@ -1,5 +1,10 @@
 /* GENERAL STYLES */
 
+@font-face {
+	font-family: 'icomoon';
+	src: url('icomoon.ttf');
+}
+
 body {
 	background: #eee;
 	color: #333;
@@ -107,7 +112,6 @@ body {
   top: 0; 
   bottom: 0;
 	background: rgba(1, 1, 1, 0.7);
-	/*background: linear-gradient(0deg, rgba(1, 1, 1, 0.35) 5%, rgba(1, 1, 1, 0.5));*/
 	color: #fff;
 	opacity: 0;
 	transition: opacity 0.275s ease-out;
@@ -220,6 +224,7 @@ body {
 
 .personal-links a {	
 	color: #444;
+	font-family: 'icomoon';
 	font-size: 56px;
 	padding-left: 3px;
 }
@@ -227,6 +232,7 @@ body {
 .personal-links a:hover {
 	color: #333;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 #eduCol {
