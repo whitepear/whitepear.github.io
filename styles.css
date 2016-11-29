@@ -617,6 +617,7 @@ body {
 	}
 
 	.mobile-links a {
+		font-family: 'icomoon';
 		margin-left: -3px;
 		text-decoration: none;
 		color: #555;
