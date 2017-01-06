@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nightlife Coordination App</title>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS (Minified) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200|Open+Sans:300,400" rel="stylesheet">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+	<div class="container extended-container">
+		<!-- Standard Navbar -->
+		<div class="container custom-nav">
+			<span class="pull-left" id="customNavLogo">Paul Gallagher</span>
+			<a href="../../about.html"><span class="custom-nav-icon pull-right">About</span></a>
+			<a href="../../index.html"><span class="custom-nav-icon pull-right">Portfolio</span></a>			
+		</div>
+
+		<!-- Mobile Navbar -->
+		<div class="container mobile-nav">			
+			<a href="../../index.html"><span>Portfolio</span></a>
+			<a href="../../about.html"><span>About</span></a>
+		</div>
+
+		<div class="row first-row">
+			<div class="hidden-xs col-sm-5 project-col text-center">
+				<img src="../../portfolio_images/projects/night/night1.png" alt="App Picture" height="350" width="350">
+				<img src="../../portfolio_images/projects/night/night2.png" alt="App Picture" height="350" width="350">
+			</div> <!-- /col -->
+
+			<div class="col-xs-12 col-sm-7 project-col">
+				<h1>Nightlife Coordination App</h1>
+				<div class="project-description">
+					<p>Responsively-designed full-stack application that allows users to track nightlife activity in their area. Users can search for a town or city, and receive a list of bars local to that area. Each venue entry contains related information, including the number of users planning to attend the bar that particular night. Authenticated users can add themselves to the count of those attending.</p>	
+					<p>This application consists of a front-end interface written with React.js, an Express API server, and a MongoDB database consisting of two collections. The application receives JSON data from the <a href="https://www.yelp.com/developers/documentation/v2/overview" target="_blank">Yelp API</a> in order to generate city-specific venue information. The front-end architecture is structured around stateful container components, within which stateless functional components render UI. Front-end routing is handled by React-Router. Database operations within the Express server are mediated by the official MongoDB Node.js driver. A time-to-live index placed on one of the database collections ensures that venue records (which track venue attendee numbers) are deleted at 5am daily.</p>
+					<p>Express-Session and Connect-Mongo manage session-storage within the database. User passwords are hashed and salted using bcrypt, whilst user input is sanitized via Sanitize-Html. Application styling is achieved through the use of modular Sass stylesheets.</p>
+					<p><span>Note:</span> This application is hosted on Heroku. Please allow a few seconds for the hosting server to wake up when attempting to view it live.</p>
+					<div class="project-btn-container">
+						<a class="btn code-btn" href="https://github.com/whitepear/nightlife" target="_blank">View Code</a>
+						<a class="btn live-btn" href="https://immense-island-28217.herokuapp.com/" target="_blank">View App</a>
+					</div> <!-- /project-btn-container -->
+				</div> <!-- /project-description -->							
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+
+	<script type="text/javascript" src="../../script.js"></script>
+</body>
+</html>
