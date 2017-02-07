@@ -227,6 +227,7 @@ body {
 	font-family: 'icomoon';
 	font-size: 56px;
 	padding-left: 3px;
+	text-decoration: none;
 }
 
 .personal-links a:hover {
@@ -571,34 +572,28 @@ body {
 	}
 
 	.tab-container {
-		background: #C81C1C;
+		background: #ddd;
 		font-size: 0px; /* removes whitespace between inline-block tabs */
-		height: 55px;
-		border-bottom: 1px solid #fff;
+		height: 60px;
 	}
 
 	.tab {
 		display: inline-block;		
 		height: 100%;
+		padding-top: 12px;
 		font-size: 24px;
 		text-align: center;
 		width: 50%;
-		line-height: 55px;
-		color: rgba(255, 255, 255, 0.75);
-	}
-
-	.tab:first-child {
-		border-right: 1px solid #ccc;
+		color: #333;
+		transition: 0.2s ease-out;
 	}
 
 	.active-tab {
-		color: #fff;
+		border-bottom: 8px solid #fff;
 	}
 
 	.about-col {
-		margin-top: 2px;
-		padding-top: 2px;
-		border-top: 1px solid #ccc;
+		padding-top: 15px;
 		display: none;
 	}
 
