@@ -82,12 +82,23 @@ body {
 	border-bottom: 1px solid #ccc;
 }
 
+.projects-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
 .project-caret {
 	display: none;
 }
 
-.project {
+.project-wrapper {	
+	flex: 1;
+}
+
+.project {	
 	position: relative;
+	text-align: center;
 	height: 300px;
 	width: 300px;
 	margin: 10px auto 30px;
@@ -486,6 +497,7 @@ body {
 		margin-bottom: 10px;
 		font-size: 28px;
 		cursor: pointer;
+		text-align: center;
 	}
 
 	.project-caret {
@@ -503,19 +515,19 @@ body {
 	}
 
 	.expanded-fullstack-section {
-		max-height: 400px;
+		max-height: 950px;
 	}
 
 	.expanded-react-section {
-		max-height: 400px;
+		max-height: 1850px;
 	}
 
 	.expanded-backend-section {
-		max-height: 400px;
+		max-height: 1550px;
 	}
 
 	.expanded-frontend-section {
-		max-height: 400px;
+		max-height: 2200px;
 	}
 
 	.project {
