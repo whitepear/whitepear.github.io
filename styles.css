@@ -503,7 +503,7 @@ body {
     font-family: Raleway;
     font-size: 39px;    
     line-height: 77px;
-    background: #ddd;    
+    background: linear-gradient(#eee 75%, #ddd);    
 	}
 
 	#fullStackHeader {
@@ -602,7 +602,7 @@ body {
 	}
 
 	.tab-container {
-		background: #ddd;
+		background: linear-gradient(#eee 64%, #ddd);
 		font-size: 0px; /* removes whitespace between inline-block tabs */
 		height: 60px;
 	}
