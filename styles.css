@@ -70,6 +70,10 @@ body {
 
 /* INDEX-SPECIFIC STYLES */
 
+.mobile-title-bar {
+	display: none;
+}
+
 #fullStackHeader {
 	margin-top: 60px;
 }
@@ -419,6 +423,7 @@ body {
 
 /* Small Styles */
 @media (min-width: 768px) and (max-width: 991px) {
+
 	/* INDEX-SPECIFIC STYLES */
 
 	/* PROJECT SUMMARY SPECIFIC STYLES */
@@ -488,8 +493,21 @@ body {
 
 	/* INDEX-SPECIFIC STYLES */
 
+	.mobile-title-bar {
+		display: block;
+		position: absolute;
+    left: 0;
+    right: 0;
+    height: 77px;
+    text-align: center;    
+    font-family: Raleway;
+    font-size: 39px;    
+    line-height: 77px;
+    background: #eee;    
+	}
+
 	#fullStackHeader {
-		margin-top: 30px;
+		margin-top: 98px;
 	}
 
 	.portfolio-header {
