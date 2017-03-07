@@ -179,6 +179,13 @@ body {
 	bottom: 60%;
 }
 
+.medium-tag-list {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 60%;
+}
+
 .long-tag-list {
 	position: absolute;
 	left: 0;
@@ -580,6 +587,13 @@ body {
 
 	.project-tags {
 		transform: translateY(115px);	
+	}
+
+	.medium-tag-list {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 49%;
 	}
 
 	.project-overlay:hover .project-tags {
